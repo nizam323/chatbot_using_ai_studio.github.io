@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 const Home = () => {
 
-    const genAI = new GoogleGenerativeAI('AIzaSyB144MxecTTLIuhN4umiFekR9c3vHBk7cE');
+    const genAI = new GoogleGenerativeAI('Your API Key');
     const model = genAI.getGenerativeModel({ model: "gemini-pro" });
     const [search, setSearch] = useState('');
     const [aiResponse, setResponse] = useState('');
